@@ -1,0 +1,22 @@
+.form {
+    max-width: 980px;
+    justify-content: space-between;
+}
+
+.radioInputMargined {
+    margin: 0 54px 0 44px;
+}
+
+.button {
+    max-width: 205px;
+}
+
+.list {
+    align-items: flex-end;
+    margin-top: 48px;
+    min-height: 360px;
+}
+
+.listItem {
+    padding: 0 5px 0;
+}

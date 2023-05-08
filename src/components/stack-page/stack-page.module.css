@@ -1,0 +1,26 @@
+.form {
+    max-width: 829px;
+}
+
+.input {
+    max-width: 378px;
+}
+
+.buttonAdd {
+    min-width: 121px;
+}
+
+.buttonDelete {
+    min-width: 107px;
+}
+
+.buttonReset {
+    min-width: 118px;
+}
+
+.list {
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin-top: 50px;
+}
+
