@@ -1,0 +1,19 @@
+.controlContainer {
+    display: flex;
+    max-width: 567px;
+    margin: 0 auto;
+}
+
+.visualizationContainer {
+    display: flex;
+    margin: 118px auto 0px;
+    justify-content: center;
+}
+
+.input {
+    min-width: 376px;
+}
+
+.button {
+    width: 100%;
+}
