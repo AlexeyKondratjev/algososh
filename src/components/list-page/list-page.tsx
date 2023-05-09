@@ -405,7 +405,7 @@ export const ListPage: React.FC = () => {
             text='Добавить по индексу'
             extraClass={styles.buttonWide}
             isLoader={isAdditionByIndex}
-            disabled={dataIndex === undefined || !dataString || isAdditionToHead || isAdditionToTail || isDelitionFromHead || isDelitionFromTail || isDelitionByIndex}
+            disabled={dataIndex === undefined || dataIndex > list.getSize() - 1 || !dataString || isAdditionToHead || isAdditionToTail || isDelitionFromHead || isDelitionFromTail || isDelitionByIndex}
             onClick={addElementByIndex}
           />
           <Button
@@ -413,7 +413,7 @@ export const ListPage: React.FC = () => {
             text='Удалить по индексу'
             extraClass={styles.buttonWide}
             isLoader={isDelitionByIndex}
-            disabled={dataIndex === undefined || isAdditionToHead || isAdditionToTail || isDelitionFromHead || isDelitionFromTail || isAdditionByIndex}
+            disabled={dataIndex === undefined || dataIndex > list.getSize() - 1 || isAdditionToHead || isAdditionToTail || isDelitionFromHead || isDelitionFromTail || isAdditionByIndex}
             onClick={deleteElementByIndex}
           />
         </fieldset>
