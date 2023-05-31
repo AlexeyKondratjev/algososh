@@ -3,11 +3,12 @@
     max-width: 567px;
     margin: 0 auto;
 }
-
-.visualizationContainer {
+.fieldset {
     display: flex;
-    margin: 118px auto 0px;
-    justify-content: center;
+    border: none;
+    align-items: center;
+    margin: 0;
+    padding: 0;
 }
 
 .input {
@@ -16,4 +17,18 @@
 
 .button {
     width: 100%;
+}
+
+.list {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    margin: 118px auto 0px;
+    justify-content: center;
+}
+
+
+.listItem {
+    padding-bottom: 78px;
 }
