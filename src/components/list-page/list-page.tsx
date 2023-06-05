@@ -39,12 +39,6 @@ export const ListPage: React.FC = () => {
   }
 
   const [list, setList] = useState<LinkedList<TLetter>>(getInitialLinkedList());
-  //****************************************************************************************************************
-  //Здесь я столкнулся с тем, что при применении сеттера setList() - Реакт почему-то в некоторых случаях
-  // не инициировал ререндер и, следовательно, не получалось сделать пошаговую анимацию.
-  //Я потратил кучу времени, пытаясь разобраться, но так и не смог. Не придумал ничего лучшего, кроме как 
-  //изменять вспомогательный стейт для инициации ререндера(( 
-  //****************************************************************************************************************
   const [initRender, setInitRender] = useState('');
 
 
@@ -348,6 +342,7 @@ export const ListPage: React.FC = () => {
             maxLength={4}
             isLimitText={true}
             value={dataString}
+            name='valueInput'
             disabled={isAdditionToHead || isAdditionToTail || isDelitionFromHead || isDelitionFromTail || isAdditionByIndex || isDelitionByIndex}
             onChange={e => setDataString(e.currentTarget.value)}
           />
@@ -396,6 +391,7 @@ export const ListPage: React.FC = () => {
             /* maxLength={4} */
             isLimitText={true}
             value={dataIndex}
+            name='indexInput'
             disabled={isAdditionToHead || isAdditionToTail || isDelitionFromHead || isDelitionFromTail || isAdditionByIndex || isDelitionByIndex}
             onChange={e => setDataIndex(Number(e.currentTarget.value))}
           />
